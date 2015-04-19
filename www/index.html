@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<style>
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+background: #F5F5DC; /* Old browsers */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:13px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+.list {
+width: 100%; height: 100px; background: #F7F4D4; margin-bottom: 5px; margin-top: 5px; border: 1px; black; border-style: solid;
+}
+
+.menu_item {
+width: 100%; height: 20px; font-size: 1.5em;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 10px;
+margin-right: -10px;
+border-bottom: 1px;
+border-bottom-style: solid;
+}
+.active {
+  color: black;
+}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+ </head>
+    <body>
+    <div id="top" style="height:70px; padding-top: 20px; background: #FFC2C2; font-size: 2.3em;">
+    <span class="fa fa-bars" id="menu_button" style="margin-left: 10px; float: left; margin-top: 20px; color: white;"></span><img src="img/lomaalta.png" style="height: 60px; float: right;" alt="" /></div>
+
+    <div id="menu" style="width: 100%; padding-top: 10px; padding-bottom: 10px; background: #4169E1; border-bottom: 3px; border-bottom-style: solid; overflow: hidden;">
+
+    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>HOME</div>
+    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>PROPERTIES</div>
+    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>AGENTS</div>
+    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>CONTACT US</div>
+    </div>
+
+    <div id="page">
+
+
+
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
+    
+
+
+
+    </div>
+    </body>
+</html>
+<script>
+  $( "#menu_button" ).click(function() {
+    $('#menu_button').toggleClass('active');
+  $( "#menu" ).animate({
+    height: "toggle"
+  }, 200, function() {
+    // Animation complete.
+  });
+});
+
+var viewportWidth = $(window).width();
+var viewportHeight = $(window).height();
+$('#load').width(viewportWidth);
+$('#load').height(viewportHeight);
+
+</script>
