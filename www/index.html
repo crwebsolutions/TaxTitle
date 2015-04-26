@@ -29,9 +29,9 @@ width: 100%; height: 100px; background: #F7F4D4; margin-bottom: 5px; margin-top:
 }
 
 .menu_item {
-width: 100%; height: 20px; font-size: 1.5em;
-padding-top: 8px;
-padding-bottom: 8px;
+width: 100%; height: 20px; font-size: 1.6em;
+padding-top: 20px;
+padding-bottom: 20px;
 padding-left: 10px;
 margin-right: -10px;
 border-bottom: 1px;
@@ -49,40 +49,37 @@ border-bottom-style: solid;
 
  </head>
     <body>
-    <div id="top" style="height:70px; padding-top: 20px; background: #FFC2C2; font-size: 2.3em;">
-    <span class="fa fa-bars" id="menu_button" style="margin-left: 10px; float: left; margin-top: 20px; color: white;"></span><img src="img/lomaalta.png" style="height: 60px; float: right;" alt="" /></div>
+    <div id="loading" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;text-align: center; padding-top: 150px; font-size: 2em; background: white; overflow: hidden; z-index: 1000;">
+    <span class="fa fa-spinner fa-spin" style="font-size: 6em;"></span><br>Loading...</div>
 
-    <div id="menu" style="width: 100%; padding-top: 10px; padding-bottom: 10px; background: #4169E1; border-bottom: 3px; border-bottom-style: solid; overflow: hidden;">
-
-    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>HOME</div>
-    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>PROPERTIES</div>
-    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>AGENTS</div>
-    <div class="menu_item"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>CONTACT US</div>
+    <div style="position: fixed; top:0; left: 0; z-index: 900; " id="top_menu">
+    <div id="top" style="height:70px; padding-top: 20px; background: #FFF; font-size: 2.3em; border-bottom: 2px; border-bottom-style: solid;">
+    <span class="fa fa-bars" id="menu_button" style="margin-left: 20px; float: left; margin-top: 20px; color: black;">MENU</span><img src="img/taxtitle.png" style="height: 60px; float: right;" alt="" />
     </div>
 
-    <div id="page">
+    <div id="menu" style="width: 100%; padding-top: 10px; padding-bottom: 10px; font-weight: bold; color: #FFF; background: #AD0000; border-bottom: 3px; border-bottom-style: solid; overflow: hidden;">
 
+    <div class="menu_item" onclick="page_change('home');"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>HOME</div>
+    <div class="menu_item" onclick="page_change('properties');"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>PROPERTIES</div>
+    <div class="menu_item" onclick="page_change('agents');"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>AGENTS</div>
+    <div class="menu_item" onclick="page_change('contact');"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>CONTACT US</div>
+    <div class="menu_item" onclick="page_change('contact');"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>CONTACT US</div>
+    <div class="menu_item" onclick="load_properties();"><span style="padding-right: 10px;" class="fa fa-angle-right"></span>CONTACT US</div>
+    </div>
+    </div>
 
+    <div id="page" style="margin-top: 90px; font-size: 1.6em; padding: 15px;">
 
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    <div class="list"><img src="http://lomaaltagroup.com/properties/files/1621221DSCN0853.JPG" height="100px" alt="" /></div>
-    
+    <div id="page_home" class="page">
+     LomaAlta Investments, LLC is a real estate investment company focused on buying, selling and developing of commercial and residential property.<br><br>
+      We engage in all real estate transactions from home flipping, single and multifamily construction, to land subdivision development.<br><br>
+       Fundamentally, we purchase property that is foreclosed on, condemned or rundown and plan its development, rebuild and restore to resell for profit. <br><br>
+       Our business operates mainly in Cameron County and anticipates to rapidly expand to surrounding areas.
+    </div>
+
+    <div id="page_properties" class="page" style="display: none;">
+
+    </div>
 
 
 
@@ -90,18 +87,65 @@ border-bottom-style: solid;
     </body>
 </html>
 <script>
-  $( "#menu_button" ).click(function() {
-    $('#menu_button').toggleClass('active');
-  $( "#menu" ).animate({
-    height: "toggle"
-  }, 200, function() {
-    // Animation complete.
-  });
+function set(name, value) {
+window.localStorage.setItem(name,value);
+}
+function get(name) {
+return window.localStorage.getItem(name);
+}
+
+
+var menu_open =0;
+function menu() {
+if (menu_open == 0) {
+$('#menu_button').css( "color", "black" );
+menu_open=1;
+}
+else {
+$('#menu_button').css( "color", "red" );
+menu_open=0;
+}
+   $( "#menu" ).animate({height: "toggle"}, 200, function() { });
+}
+
+function page_change(page) {
+  $('.page').fadeOut();
+  $('#page_'+page).fadeIn();
+  menu();
+}
+
+$(window).on('resize orientationChanged', function() {
+  size_menu();
 });
 
+
+  $( "#menu_button" ).click(function() {
+    $('#menu_button').toggleClass('active');
+    menu();
+});
+
+function size_menu() {
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
-$('#load').width(viewportWidth);
-$('#load').height(viewportHeight);
+$('#top_menu').width(viewportWidth);
+$('#top_menu').height(viewportHeight);
+}
+
+function load_properties() {
+  $('#page_properties').load('http://lomaaltagroup.com/properties/app_api.php');
+}
+
+$(document).on("click", '.list', function(event) {
+var propID = $(this).attr('propID');
+alert('Test');
+$('#page_properties').load("http://lomaaltagroup.com/properties/app_api.php?property="+ propID);
+});
+
+$(document).ready(function() {
+size_menu();
+menu();
+load_properties();
+  $('#loading').delay(2000).fadeOut();
+});
 
 </script>
